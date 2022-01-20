@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <link href="first.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="device-width=device">
+        <script src="first.js"></script>
+
+        <script>
+            function changeMode(){
+                var mybody = document.body;
+                // if body have class mydark than remove else add
+                mybody.classList.toggle("mydark")
+            }
+        </script>
+
+    </head>
+    <body>
+<!--Header of the home page starts-->
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div id="search">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Sign Up</button></li>
+                        <li><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-log-in"></span> Login</button></li>
+                        
+                    </ul>
+                    <button onclick="changeMode()"><i class="fas fa-sun"></i></button>
+            </nav>
+                <div id="logo">
+                   <span><i><b>Cravers</b></i></span>
+                </div>
+                <div class="heading">
+                    <p>Browse Menus in Your Area</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dropdown">
+                            <select id="city" onChange="getHotel()">
+                                <option>---Select City---</option>    
+                            </select>
+                            <select class="restaurantSelect" id="hotels">
+                                <option>---Select Restaurants---</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Header Ends-->
+<div id="coupon">
+    <button onclick="closeDiv()">&times;</button>
+</div>
+<!--Start of Quick Search-->
+
+        <div id="quickSearch">
+            <span id="quickHeading" style="display:block;">
+                Quick Search
+            </span>
+            <span id="quickSubHeading">
+                Discover Restaurants By Meal
+            </span>
+            <div class="container">
+            <div class="mainTile">
+                    <div class="card">
+                        <img src="image/snacks.png" alt="BreakFast" style="width:100%;">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">BreakFast</a></b></h4> 
+                            <p>Satisfy Your Morning Hunger</p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/lunch1.png" alt="Lunch" style="width:100%; ">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">Lunch</a></b></h4> 
+                            <p>Always Have The Appetite For Lunch</p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/dinner.png" alt="Dinner" style="width:100%; ">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">Dinner</a></b></h4> 
+                            <p>Eat Right, Live Right</p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/drinks3.png" alt="Drinks" style="width:100%; ">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">Drinks</a></b></h4> 
+                            <p>Trendy Taste, Trendy You</p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/ice-cream1.png" alt="Ice-Cream" style="width:100%; ">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">Ice-Cream</a></b></h4> 
+                            <p>Ice Creams Makes Everything Better</p> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/dessert-for-Las-Vegas.jpg" alt="Desserts" style="width:100%; ">
+                        <div class="container">
+                            <h4><b><a class="card-title" href="listing/listing.html">Desserts</a></b></h4> 
+                            <p> A Little Piece of Heaven</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Start of Footer Section-->
+<footer>
+    <hr>
+    <center>
+        <h3>&copy;2021 Shruti Patel</h3>
+    </center>
+</footer>
+<!--End of Footer Section-->
+               
+    </body>
+</html>
