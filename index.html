@@ -16,9 +16,34 @@
                 mybody.classList.toggle("mydark")
             }
         </script>
+        <!--For coupon-->
+        <script>
+            $(document).ready(function(){
+                $("#myModal").modal('show');
+            });
+        </script>
 
     </head>
     <body>
+        <!--Coupon Start-->
+    </body>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title" style="color:black">Use the Promo Code</h2>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <h1 class="font-weight-bold" style="color:red">GET 200</h1>
+                        <h2 class="font-weight-normal" style="color:black">for 30% OFF up to ₹200 on </h2>
+                        <h2 class="font-weight-normal" style="color:black">your first order </h2>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
 <!--Header of the home page starts-->
         <div class="container">
             <nav class="navbar navbar-inverse">
@@ -51,9 +76,6 @@
             </div>
         </div>
 <!--Header Ends-->
-<div id="coupon">
-    <button onclick="closeDiv()">&times;</button>
-</div>
 <!--Start of Quick Search-->
 
         <div id="quickSearch">

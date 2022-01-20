@@ -5,16 +5,12 @@ body{
     margin:auto;
     background-color:white;
 }
-#coupon{
-    height:500px;
-    width:650px;
-    background-image: url("image/coupon.jpg");
-    visibility: hidden;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: index 100 !important;
-    margin-left :28%;
-    position: relative;
+.modal-content{
+    text-align:center;
+    height:300px;
+    width:500px;
+    border: dotted 5px red;
+
 }
 .mydark{
     background-color:black;
